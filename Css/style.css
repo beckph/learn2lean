@@ -1,0 +1,1775 @@
+/*Allgemein*/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Arial', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+/*START von NAV-BAR*/
+.navbar{
+	position: sticky;
+	background-color: #fff;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	z-index: 100;
+	border-bottom: 1px solid #53ECBD;
+	box-shadow: 0px 3px 10px #53ECBD;
+	margin-bottom: 20px;
+}
+.navbar-links{
+	position: relative;
+	float: left;
+	text-align: left;
+	width: 33.333%;
+	height: 50px;
+}
+.navbar-mitte{
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 33.333%;
+	height: 50px;
+}
+.navbar-rechts{
+	position: relative;
+	float: left;
+	text-align: right;
+	width: 33.333%;
+	height: 50px;
+}
+
+.navbar-icon-backarrow{
+	width: 40px;
+	height: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.navbar-logo{
+
+	margin-top: 7.5px;
+	margin-bottom: 7.5px;
+	margin-right: 10px;
+	width: auto;
+	height: 35px;
+}
+.navbar-title{
+	margin-top: 15px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+/*ENDE VON Navbar*/
+
+.grid-container {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px 100px 100px 100px 100px 100px;
+	grid-row-gap: 15px;
+	grid-template-columns: 180px 180px 180px 180px 180px;
+	grid-column-gap: 15px;
+}
+.grid-item {
+	/*background-color: red;*/
+}
+.grid-popup {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px auto auto auto;
+	grid-row-gap: 10px;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 10px;
+}
+.grid-popup-item {
+	/*background-color: blue;*/
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #D1DADC;
+	border-radius: 15px;
+	overflow: auto;
+}
+.container-noborder {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	overflow: auto;
+}
+.title {
+	margin-top: 10px;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+}
+
+#container-popup-hintergrund {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 55px;
+	left: 0px;
+	z-index: 90;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+}
+#container-popup-klein {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -250px;
+	background-color: #fff;
+	border-radius: 15px;
+	z-index: 91;
+	display: none;
+}
+#container-popup-gross {
+	position: relative;
+	width: 700px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+	background-color: #fff;
+	border-radius: 15px;
+	z-index: 91;
+	display: none;
+}
+#container-popup-anleitungen {
+	position: relative;
+	width: 700px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+	background-color: #fff;
+	border-radius: 15px;
+	z-index: 91;
+	display: none;
+}
+#container-popup-kunde {
+	position: relative;
+	width: 700px;
+	height: 400px;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+	background-color: #fff;
+	border-radius: 15px;
+	z-index: 91;
+	display: none;
+}
+#container-popup-maximaleGrenzwerte {
+	position: relative;
+	width: 700px;
+	height: 600px;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -350px;
+	background-color: #fff;
+	border-radius: 15px;
+	z-index: 91;
+	display: none;
+}
+.container-popup-nav {
+	width: 100%;
+	height: 35px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+.container-popup-title {
+	width: 90%;
+	float: left;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+.container-popup-close {
+	margin: 5px;
+}
+.container-popup-close-image {
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+
+/*START VON PopUp SpielOption*/
+#container-popup-hintergrund-spieloption {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 55px;
+	left: 0px;
+	z-index: 90;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+}
+#container-popup-spieloption {
+	position: relative;
+	width: 500px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -250px;
+	background-color: #fff;
+	border-radius: 15px;
+	z-index: 91;
+	display: none;
+}
+.grid-popup-spieloptionen {
+	width: 100%;
+	height: 280px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 50px auto auto auto;
+	grid-row-gap: 10px;
+	grid-template-columns: auto;
+	grid-column-gap: 10px;
+}
+.grid-popup-spieloption-titel {
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+}
+.popup-spieloption-img {
+	display: block;
+	margin: 20px auto;
+}
+.grid-popup-spieloption-infotext {
+	text-align: center;
+}
+.grid-popup-spieloption-analytics-button {
+
+}
+
+/*ENDE VON PopUp SpielOption*/
+
+
+/*START VON index.php - Startseite*/
+.grid-container-startseite {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 20px 20px 250px 20px 250px;
+	grid-row-gap: 15px;
+	grid-template-columns: 180px 180px 180px 180px 180px;
+	grid-column-gap: 15px;
+}
+.main-title-startseite {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.sub-title-startseite-1 {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.sub-title-startseite-2 {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.img-Rollenauswahl {
+	width: 110px;
+	height: 130px;
+	position: relative;
+	left: 50%;
+	margin-left: -55px;
+	margin-top: 15px;
+	/*border: 1px solid black;*/
+}
+/*ENDE VON index.php - Startseite*/
+
+/*START VON Kunde.php*/
+.grid-container-kunde {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 20px 150px 150px 150px 30px;
+	grid-row-gap: 15px;
+	grid-template-columns: 277.5px 277.5px 100px 300px;
+	grid-column-gap: 15px;
+}
+.title-Bestelloptionen {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.title-Auftragsliste {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.kunde-timer {
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+#timer-anzeige {
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	/*color: red;*/
+	float: right;
+}
+.auftragsliste {
+	grid-column-start: 3;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 6;
+}
+.mehrfachbestellung {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.btnBestellungStornieren {
+	width: 80px;
+	height: 25px;
+	background-color: #ff3b30;
+	border: 1px solid #ff3b30;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 12px;
+}
+.bestell-button {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.bestell-button p {
+	float: left;
+	font-family: 'Arial', sans-serif;
+	font-size: 40px;
+	text-align: left;
+	margin-left: 25px;
+	margin-top: 45px;
+	color: #fff;
+}
+.bestell-button img {
+	width: 90px;
+	height: auto;
+}
+
+
+
+
+.btn-bestellen-text {
+	text-align: middle left;
+
+}
+
+.bestell-button-blau {
+	/*background-color: #01a9f4;*/
+	background-image: radial-gradient(#8C9EFF, #304FFE);
+}
+
+.bestell-button-gelb {
+	/*background-color: #ffeb3b;*/
+	background-image: radial-gradient(#FFF176, #FFD600);
+}
+
+.bestell-button-rot {
+	/*background-color: #ff5131;*/
+	background-image: radial-gradient(#FF8A80, #D50000);
+}
+
+.bestell-button-gruen {
+	/*background-color: #64dd17;*/
+	background-image: radial-gradient(#69F0AE, #00C853);
+}
+.bestell-button-orange {
+	/*background-color: #FF9800;*/
+	background-image: radial-gradient(#FFD180, #FF6D00);
+}
+.bestell-button-lila {
+	/*background-color: #9C27B0;*/
+	background-image: radial-gradient(#9575CD, #6200EA);
+}
+
+/*POPUP in Kunde.php*/
+.grid-popup-auslieferung {
+	width: 80%;
+	height: 350px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 200px 30px auto;
+	grid-row-gap: 10px;
+	grid-template-columns: auto auto;
+	grid-column-gap: 10px;
+}
+.grid-popup-endprodukt-image {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.popup-endprodukt-image {
+	width: 150px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+.grid-popup-endprodukt-infotext {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	font-size: 25px;
+}
+.button-bestellung-annehmen {
+	width: 80%;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 3px solid #53ECBD;
+	border-radius: 7.5px;
+	font-size: 15px;
+	color: #53ECBD;
+	background-color: #fff;
+	font-family: 'Arial', sans-serif;
+	cursor: pointer;
+}
+.button-bestellung-ablehnen {
+	width: 80%;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 3px solid #D50000;
+	border-radius: 7.5px;
+	font-size: 15px;
+	color: #D50000;
+	background-color: #fff;
+	font-family: 'Arial', sans-serif;
+	cursor: pointer;
+}
+
+
+/*ENDE VON Kunde.php*/
+
+/*START VON Station/Arbeitsplätze Allgemein*/
+.grid-container-station {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 100px 15px 15px 200px 15px 200px;
+	grid-row-gap: 15px;
+	grid-template-columns: 300px 300px 100px auto;
+	grid-column-gap: 15px;
+}
+.auftragsslider {
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+.name-baustueck {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.liste-bauteile {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 3;
+	grid-row-end: 7;
+}
+.grid-hilfe-button {
+	grid-column-start: 3; 
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+.grid-bestellen-button{
+	grid-column-start: 3; 
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.grid-abgeschlossen-button {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+.hilfe-button {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #9E9E9E;
+	background-image: radial-gradient(#BDBDBD, #9E9E9E);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.bestellen-button {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #0091EA;
+	/*background-color: #00B0FF;*/
+	background-image: radial-gradient(#00B0FF, #0091EA);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.abgeschlossen-button {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #00BFA5;
+	background-image: radial-gradient(#53ECBD, #00BFA5);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.img-station-button {
+	width: 50px;
+	height: 50px;
+	fill: white;
+}
+.title-bauteile {
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.title-schritt {
+	font-family: 'Arial', sans-serif;
+}
+.image-station-schritt {
+	max-width: 280px;
+	max-height: 180px;
+	display: block;
+	margin: 10px auto;
+}
+
+.materialbedarf-item {
+	display: flex;
+	font-family: 'Arial', sans-serif;
+	font-size: 30px;
+	justify-content: center;
+	margin-top: 10px;
+}
+.materialbedarf-item-anzahl {
+	margin-top: 25px;
+	margin-right: 20px;
+}
+.image-station-bauteile {
+	width: 120px;
+	height: 80px;
+}
+/*Slider Definition*/
+.slider {
+	width: 950px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	/*text-align: center;*/
+	overflow: auto;
+	white-space: nowrap;
+}
+.slider-item {
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid #D1DADC;
+	border-radius: 15px;
+	float:left;
+}
+
+.slider-item-mehrfachbestellung {
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 3px solid red;
+	border-radius: 15px;
+	float:left;
+}
+
+/*100% für perfekte Überlappung*/
+.button-auftragsliste {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.image-teilprodukt-auftragsliste {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.button-endprodukt-auftragsliste {
+	width: 100%;
+	height: 100%;
+}
+.image-endprodukt-auftragsliste {
+	width: 100%;
+	height: 100%;
+}
+
+/*PopUp Material bestellen (automatisch und manuell)*/
+.grid-popup-material {
+	width: 350px;
+	height: 100%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px 250px 50px;
+	grid-row-gap: 10px;
+	grid-template-columns: 100px 250px;
+	grid-column-gap: 10px;
+}
+.grid-popup-material-infotext {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: center;
+}
+.grid-popup-material-produktbild {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.popup-material-produktbild {
+	width: 45px;
+	height: 45px;
+	display: block;
+	margin: 0 auto;
+}
+.grid-popup-material-txtAnzahl {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.popup-material-txtAnzahl {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#btnMaterialMinus, #btnMaterialPlus {
+	width: 35px;
+	height: 35px;
+	border-radius: 7.5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+}
+.btnMaterialMinusFarbe {
+	border: 1px solid red;
+	color: red;
+}
+.btnMaterialPlusFarbe {
+	border: 1px solid green;
+	color: green;
+}
+
+.txtMaterial {
+	width: 50px;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+	background-color: #D1DADC;
+	border: 1px solid #D1DADC;
+	border-radius: 7.5px;
+}
+.grid-popup-material-button {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.btnMaterialGrenzen {
+	width: 80%;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 7.5px;
+	border: 3px solid #D1DADC;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+/*ENDE VON Station Allgemein*/
+
+/*START VON Qualitätskontrolle*/
+.grid-container-qualität {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 100px 30px 200px 200px;
+	grid-row-gap: 15px;
+	grid-template-columns: auto 100px 150px;
+	grid-column-gap: 15px;
+}
+.grid-auftragsslider-qualitätskontrolle {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.grid-title-Produktbezeichnung {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.qm-timer {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.grid-hilfe-button-qm {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+.grid-produktbild {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+.image-Quality {
+	max-width: 300px;
+	max-height: 380px;
+	display: block;
+	margin: 20px auto;
+}
+.grid-ausliefern-button {
+
+}
+.button-ausliefern {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #00BFA5;
+	/*background-color: #53ECBD;*/
+	background-image: radial-gradient(#53ECBD, #00BFA5);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.grid-nachbesser-button {
+	
+}
+.button-nachbessern {
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(#FF1507, #DA0000);
+	border: 1px solid #DA0000;
+	border-radius: 15px;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer; 
+}
+
+/*ENDE VON Qualitätskontrolle*/
+
+/*START VON Logistik*/
+.grid-container-logistik {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px 160px 40px 300px;
+	grid-row-gap: 15px;
+	grid-template-columns: 250px 250px 250px 250px;
+	grid-column-gap: 15px;
+}
+.grid-title-logistik {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-family: 'Arial';
+	font-weight: bold;
+}
+.grid-station-zu-station-button {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+.grid-hilfe-button-logistik {
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+.bestellungsslider {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	overflow: auto;
+}
+.container-logistik-slider {
+	width: 150px;
+	height: 150px;
+	border: 3px solid #D1DADC;
+	border-radius: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	float: left;
+}
+.container-logistik-slider-bearbeitung {
+	border: 3px solid #53ECBD;
+}
+.image-logistik-slider {
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+}
+.logistik-anzahl {
+	text-align: center;
+}
+.button-logistik-slider {
+	width: 80%;
+	height: 30px;
+	border-radius: 7.5px;
+	border: 3px solid #D1DADC;
+	display: block;
+	margin: 5px auto;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+}
+.station-zu-station-button {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #0091EA;
+	background-image: radial-gradient(#00B0FF, #0091EA);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.grid-popup-umbuchung {
+	width: 450px;
+	height: 100%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 50px 100px 100px 50px;
+	grid-row-gap: 10px;
+	grid-template-columns: auto auto;
+	grid-column-gap: 10px;
+}
+.grid-popup-infotext-umbuchung {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.grid-popup-umbuchung-button {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+/*ENDE VON Logistik*/
+
+/*START von Produktionsleiter*/
+.grid-container-produktionsleiter {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px 100px 30px 200px 30px 100px;
+	grid-row-gap: 15px;
+	grid-template-columns: 180px 180px 180px 180px 180px;
+	grid-column-gap: 15px;
+}
+.grid-title-produktionsreihenfolge {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+.grid-produktionsreihenfolge {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+.grid-title-hilfsanforderungen-produktionsleiter {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.grid-hilfsanforderungen-produktionsleiter {
+	grid-column-start: 1;
+	grid-column-end: 4;
+
+	/*width: 1000px;*/
+	max-height: 200px;
+	overflow-y: auto;
+}
+.grid-title-anleitungen-produktionsleiter {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.grid-anleitungen-produktionsleiter {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.grid-title-grenzwerte {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.grid-grenzwerte {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.grid-title-freigegebene-Bestellungen {
+	grid-column-start: 4;
+	grid-column-end: 6;
+}
+.grid-freigegebene-Bestellungen {
+	grid-column-start: 4;
+	grid-column-end: 6;
+	grid-row-start: 4;
+	grid-row-end: 7;
+}
+.maximale-grenzwerte-button {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #EF6C00;
+	background-image: radial-gradient(#FFB74D, #EF6C00);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.button-anleitungen {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #283593;
+	background-image: radial-gradient(#7986CB, #283593);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.container-hilfsanforderung {
+	width: 150px;
+	height: 180px;
+	border: 1px solid #D1DADC;
+	border-radius: 15px;
+	float: left;
+	margin-left: 10px;
+}
+.container-hilfsanforderung-station {
+	font-family: 'Arial', sans-serif;
+	text-align: center;
+	margin-top: 15px;
+	height: 40px;
+}
+.container-hilfsanforderung-img {
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin: 5px auto;
+}
+.container-hilfsanforderung-annehmen {
+
+}
+.button-hilfe-annehmen{
+	width: 80%;
+	height: 35px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 7.5px;
+	border: 3px solid #D1DADC;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+
+.grid-popup-maximaleBestellGrenzwerte {
+	width: 350px;
+	height: 100%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px 450px 50px;
+	grid-row-gap: 10px;
+	grid-template-columns: 100px 250px;
+	grid-column-gap: 10px;
+}
+.grid-popup-maximaleBestellGrenzwerte-infotext {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	text-align: center;
+}
+.grid-popup-maximaleBestellGrenzwerte-produktbild {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.grid-popup-maximaleBestellGrenzwerte-txtAnzahl {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.grid-popup-maximaleBestellGrenzwerte-button {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.menu-maximalegrenzwerte-arbeitsstation {
+	width: 70px;
+	height: 30px;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 3px solid #fff;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+}
+#button-arbeitsstation1 {
+	color: #000;
+}
+#button-arbeitsstation2 {
+	color: #000;
+}
+#button-arbeitsstation3 {
+	color: #000;
+}
+#button-arbeitsstation4 {
+	color: #000;
+}
+
+/*ENDE von Produktionsleiter*/
+
+/*START von Meister*/
+.grid-container-meister {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px 135px 50px 30px 330px;
+	grid-row-gap: 15px;
+	grid-template-columns: 350px 450px auto;
+	grid-column-gap: 15px;
+}
+.grid-title-hilfsanforderungen-meister {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.grid-hilfsanforderungen-meister {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+.grid-hilfe-button-meister {
+	grid-column-start: 3;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+.grid-title-retouren {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.btnRetourenAnzeigen {
+	width: 80px;
+	height: 25px;
+	background-color: #5856d6;
+	border: 1px solid #5856d6;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 12px;
+}
+.grid-retourenAnleitung {
+
+}
+.retouren-Anleitung-Produktbild {
+	width: auto;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.grid-retoureButton {
+
+}
+
+.grid-popup-anleitungen {
+	width: 600px;
+	height: 100%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 30px 300px;
+	grid-row-gap: 10px;
+	grid-template-columns: 200px auto;
+	grid-column-gap: 10px;
+}
+
+
+/*ENDE von Meister*/
+
+/*START von Spielleiter*/
+.grid-container-spielleiter {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 135px 100px 100px 185px;
+	grid-row-gap: 15px;
+	grid-template-columns: 330px auto 330px;
+	grid-column-gap: 15px;
+}
+.grid-spielsteuerung {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.grid-bestellmodus {
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.grid-ausgangsbestand {
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.grid-analytics {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.grid-taktzeit {
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+.grid-akkumaterialstationen {
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.grid-produktfreischaltung {
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+.container-radiobutton {
+	width: 70%;
+	display: block;
+	margin: 20px auto;
+}
+/*.optionSpielErstellen {
+	display: none;
+}
+.optionSpielVerwalten {
+	display: block;
+}*/
+.produkt-freischaltung-img {
+	height: 60px;
+}
+.img-analytics {
+	position: relative;
+	width: 150px;
+	margin-top: 20px;
+	margin-bottom:15px;
+	margin-left: 50%;
+	left: -75px;
+}
+.spieltitle {
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+.checkbox-spielleiter-wrapper {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#txtSpielname {
+	display: block;
+	margin: 20px auto;
+}
+
+
+.grid-popup-werkseinstellungen {
+	width: 60%;
+	height: 255px;
+	display: grid;
+	margin: 30px auto;
+	grid-template-rows: 100px auto;
+	grid-row-gap: 10px;
+	grid-template-columns: auto;
+	grid-column-gap: 10px;
+}
+.grid-popup-infotext-werkseinstellungen {;
+	grid-row: 1;
+	grid-column: 1;
+}
+.grid-popup-werkseinstellungen-button {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+/*ENDE von Spielleiter*/
+
+/*START von Analytcis*/
+.grid-container-analytics {
+	width: 1000px;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 50px 30px 250px 30px 500px 30px 500px 30px 250px 30px 500px 30px 250px 30px 500px 50px;
+	grid-row-gap: 15px;
+	grid-template-columns: 492.5px 492.5px;
+	grid-column-gap: 15px;
+}
+.grid-title-komplett {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.grid-chart-tabelleSpielDurchlaufzeit {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.grid-chartDurchlaufzeitenBestellungen {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.grid-chartDurchschnittslaufzeitArbeitsstation {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.grid-chartHilfsanforderungenStationen {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.grid-chartAnzahlBestellungenEndProdukte {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.analytics-spielauswahl-button {
+	width: 200px;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #00BFA5;
+	background-image: radial-gradient(#53ECBD, #00BFA5);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.analytics-pdfexport-button {
+	float: right;
+	width: 200px;
+	height: 100%;
+	border-radius: 15px;
+	border: 1px solid #9E9E9E;
+	background-image: radial-gradient(#BDBDBD, #9E9E9E);
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.infotext-analytics {
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	color: #000;
+	margin-top: 100px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.container-DurchlaufzeitenBestellungen {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #D1DADC;
+    border-radius: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/*PopUp Analytics Produktionsperioden festlegen*/
+.grid-popup-analytics {
+	width: 350px;
+	height: 100%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 50px 200px 50px;
+	grid-row-gap: 10px;
+	grid-template-columns: 350px;
+	grid-column-gap: 10px;
+}
+.grid-popup-analytics-infotext {
+	/*grid-column-start: 1;
+	grid-column-end: 2;*/
+	text-align: center;
+}
+.grid-popup-analytics-produktionsperioden {
+	/*grid-column-start: 1;
+	grid-column-end: 2;*/
+	overflow: auto;
+}
+.grid-popup-analytics-button {
+
+}
+.checkbox-produktionsperioden-wrapper {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 10px;
+}
+
+/*ENDE von Analytics*/
+
+/*List-Button*/
+.list-button {
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #53ECBD;
+	border-radius: 10px;
+	background-color: #53ECBD;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.list-button:first-child {
+	margin-top: 0px;
+}
+.list-item-ID {
+	float:left;
+	font-size: 15px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.list-item-Produktbild {
+	float: left;
+	padding-left: 10px;
+}
+.list-item-Bezeichnung {
+	font-size: 15px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+/*Buttons*/
+.menu-button {
+	width: 80%;
+	height: 35px;
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 3px solid #0B2752;
+	border-radius: 7.5px;
+	font-size: 15px;
+	color: #0B2752;
+	background-color: #fff;
+	font-family: 'Arial', sans-serif;
+	cursor: pointer;
+}
+.action-button {
+	width: 80%;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 10%;
+	margin-right: 10%;
+	/*border: 3px solid #0B2752;*/
+	border: 3px solid #E0E0E0;
+	border-radius: 7.5px;
+	font-size: 15px;
+	color: #0B2752;
+	background-color: #fff;
+	font-family: 'Arial', sans-serif;
+	cursor: pointer;
+}
+.action-button-red {
+	width: 80%;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 3px solid #D50000;
+	border-radius: 7.5px;
+	font-size: 15px;
+	color: #D50000;
+	background-color: #fff;
+	font-family: 'Arial', sans-serif;
+	cursor: pointer;
+}
+
+
+.freischalten-button {
+	width: 80%;
+	height: 35px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 7.5px;
+	font-size: 15px;
+	background-color: #fff;
+	font-family: 'Arial', sans-serif;
+	cursor: pointer;
+}
+.status-freischalten {
+	border: 3px solid #53ECBD;
+	color: #53ECBD;
+}
+.status-deaktivieren {
+	border: 3px solid #D50000;
+	color: #D50000;
+}
+
+.icon-button {
+	width: 35px;
+	height: 35px;
+	border: 3px solid #0B2752;
+	border-radius: 100px;
+	padding-top: 2px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.icon-button:active {
+
+}
+
+/*Textbox*/
+.textbox {
+	width: 80%;
+	height: 35px;
+	padding-left: 10px;
+	margin-top: 10px;
+	border: 1px solid #D1DADC;
+	border-radius: 7.5px;
+	font-size: 15px;
+	background-color: #D1DADC;
+}
+/*SelectBox*/
+.taktzeit-wrapper {
+	width: 200px;
+	margin: 15px auto;
+}
+.taktzeit-wrapper::before {
+  
+}
+
+.selectBox {
+	/*-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;*/
+	border: none;
+
+	width: 200px;
+	height: 30px;
+	padding-left: 15px;
+	border: 2px solid #9E9E9E;
+	border-radius: 8px;
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+}
+.selectBox::-ms-expand {
+	display: none;
+}
+
+
+
+/*Radiobutton Spielleiterseite Bestellmodus*/
+.control-rb {
+    font-family: 'Arial', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    padding-top: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+    .control-rb input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control-rb_indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #e6e6e6;
+    border: 0px solid #53ECBD;
+    border-radius: undefinedpx;
+}
+.control-rb:hover input ~ .control-rb_indicator,
+.control-rb input:focus ~ .control-rb_indicator {
+    background: #cccccc;
+}
+
+.control-rb input:checked ~ .control-rb_indicator {
+    background: #53ECBD;
+}
+.control-rb:hover input:not([disabled]):checked ~ .control-rb_indicator,
+.control-rb input:checked:focus ~ .control-rb_indicator {
+    background: #0e6647d;
+}
+.control-rb input:disabled ~ .control-rb_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control-rb_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control-rb input:checked ~ .control-rb_indicator:after {
+    display: block;
+}
+.control-rb-radio .control-rb_indicator {
+    border-radius: 50%;
+}
+
+.control-rb-radio .control-rb_indicator:after {
+    left: 8px;
+    top: 8px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: background 250ms;
+}
+.control-rb-radio input:disabled ~ .control-rb_indicator:after {
+    background: #7b7b7b;
+}
+
+
+/*Checkbox Kundenseite Mehrfachbestellungen*/
+.control {
+    font-family: 'Arial', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #e6e6e6;
+    border: 0px solid #53ECBD;
+    border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #53ecbd;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647d;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+/*Checkbox Spielleitersteite Materialstand übernehmen*/
+.control-ms {
+    font-family: 'Arial', sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+    .control-ms input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control-ms_indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #e6e6e6;
+    border: 0px solid #53ECBD;
+    border-radius: 0px;
+}
+.control-ms:hover input ~ .control-ms_indicator,
+.control-ms input:focus ~ .control-ms_indicator {
+    background: #cccccc;
+}
+
+.control-ms input:checked ~ .control-ms_indicator {
+    background: #53ecbd;
+}
+.control-ms:hover input:not([disabled]):checked ~ .control-ms_indicator,
+.control-ms input:checked:focus ~ .control-ms_indicator {
+    background: #0e6647d;
+}
+.control-ms input:disabled ~ .control-ms_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control-ms_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control-ms input:checked ~ .control-ms_indicator:after {
+    display: block;
+}
+.control-ms-checkbox .control-ms_indicator:after {
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.control-ms-checkbox input:disabled ~ .control-ms_indicator:after {
+    border-color: #7b7b7b;
+}
+
+
+
+/*Tabellen*/
+.table {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.table-row {
+
+}
+.table-header {
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.table-cell {
+	padding: 2px;
+	text-align: center;
+	border-bottom: 1px solid #D1DADC;
+}
+.table-header-padding {
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+}
+.table-cell-produktbild {
+	width: 25px;
+	height: auto;
+}
+.table-cell-padding {
+	border-bottom: 1px solid #D1DADC;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.status-red {
+	color: #d50000;
+}
+.status-orange {
+	color: #f57f17;
+}
+.status-green {
+	color: #00c853;
+}
+.status-red-big {
+	color: #d50000;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+.status-green-big {
+	color: #00c853;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+}
+
+
+/*PopUp Hilfe*/
+.grid-popup-hilfebutton {
+	width: 60%;
+	height: 255px;
+	display: grid;
+	margin: 30px auto;
+	grid-template-rows: 100px auto;
+	grid-row-gap: 10px;
+	grid-template-columns: auto;
+	grid-column-gap: 10px;
+}
+.grid-popup-infotext-hilfe {;
+	grid-row: 1;
+	grid-column: 1;
+}
+.grid-popup-hilfe-button {
+	grid-row: 2;
+	grid-column: 1;
+}
+
+
+
+
+
+/*Drittanbieterlizenz*/
+.ueberschrift {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.beschreibung {
+	margin-top: 10px;
+	margin-left: 50px;
+}
+.funktion {
+	margin-top: 5px;
+	margin-left: 50px;
+}

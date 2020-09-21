@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	 "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<!--Einbindung der Module für den CAD Viewer-->
+
+	<script type="text/javascript" src="jsmodeler/three.min.js"></script>
+	<script type="text/javascript" src="jsmodeler/jsmodeler.js"></script>
+	<script type="text/javascript" src="jsmodeler/jsmodeler.ext.three.js"></script>
+	<script type="text/javascript" src="emb/include/online3dembedder.js"></script>
+	<script type="text/javascript">
+		
+		///Aufruf der Funktion zur 3D Ansicht
+
+		function OnResize ()
+		{
+			var canvas = document.getElementById ('fullscreen');
+			canvas.width = document.body.clientWidth;
+			canvas.height = document.body.clientHeight;
+		}
+		
+		function OnLoad ()
+		{
+			OnResize ();
+			LoadOnline3DModels ();
+		}
+	
+		window.addEventListener ('load', OnLoad, true);
+		window.addEventListener ('resize', OnResize, true);
+	</script>
+
+	<title>Learn2Lean | 3D Viewer</title>
+
+</head>
+
+<body>
+
+	<!-- Aufruf der Navbar 
+	 
+	<nav class = 'navbar'>
+		<div class = 'navbar-links'>
+			<a href='http://aws.learn2lean.cf/entwicklung_2/Qualitaetskontrolle.php'><img class = "navbar-icon-backarrow" src="http://aws.learn2lean.cf/entwicklung_2/Images/Navbar/back-pfeil.png"></a>
+		</div>
+	
+		<div class = 'navbar-mitte'>
+			<div class = 'navbar-title'>3D Viewer</div>
+		</div>
+	
+		<div class = 'navbar-rechts'>
+			<img class = "navbar-logo" src="http://aws.learn2lean.cf/entwicklung_2/Images/Navbar/Logo.png">
+		</div>
+	 </nav> 
+-->
+	<!-- Inhalt des 3D Viewer -->
+
+	<canvas id="fullscreen" class="3dviewer" sourcefiles="emb/endpro-obj/EndProduktID6/Endprod.obj|emb/endpro-obj/EndProduktID6/Endprod.mtl" height="1000px" style="width:100%; height:270px"></canvas>
+</body>
+
+</html>
